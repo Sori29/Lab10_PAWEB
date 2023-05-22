@@ -1,0 +1,40 @@
+main #all-heroes {
+  flex: 0 0 66%;
+  margin-top: 2rem;
+}
+
+main #all-heroes > legend {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+main #all-heroes table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+main #all-heroes thead tr,
+main #all-heroes tfoot tr {
+  padding: 0.75rem;
+  text-align: left;
+  background-color: var(--dark-blue);
+  color: white;
+}
+
+main #all-heroes th,
+main #all-heroes td {
+  padding: 0.75rem;
+  border: 1px 0 solid var(--gray-1);
+}
+
+main #all-heroes tbody tr:nth-child(even) {
+  background-color: var(--gray-1);
+}
+
+main #all-heroes tbody tr:hover {
+  background-color: var(--gray-2);
+  cursor: pointer;
+}
+
+main #all-heroes tbody tr[data-selected] {
+  background-color: var(--light-blue);
+}

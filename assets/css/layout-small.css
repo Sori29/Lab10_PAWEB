@@ -1,0 +1,88 @@
+/* app.css */
+
+#page {
+  min-width: 350px;
+}
+
+/* header.css */
+
+header {
+  height: auto;
+  flex-direction: column;
+  align-items: flex-start;
+}
+header #header-image {
+  max-height: 14rem;
+  width: auto;
+  max-width: 100%;
+}
+header h2 {
+  margin-bottom: 1rem;
+}
+
+/* nav.css */
+
+nav #nav-btn {
+  display: block;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+nav #nav-menu {
+  position: absolute;
+  top: 3rem;
+  width: 100%;
+  overflow-y: auto;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+nav #nav-menu li {
+  width: 100%;
+  background-color: var(--gray-5);
+}
+nav li:last-child {
+  margin: auto;
+}
+/* #toggle-nav-button:not(:checked) ~ #nav-menu { */
+/* for hove use  */
+nav #nav-menu {
+  height: 0;
+  overflow-y: hidden;
+  transition: all 0.5s;
+}
+/* nav #toggle-nav-button:checked ~ #nav-menu { */
+/* for hover use  */
+nav:hover #nav-menu {
+  height: 12rem;
+  overflow-y: hidden;
+  transition: all 0.5s;
+}
+
+/* main-hero.css */
+
+main #hero {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+main #hero div {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+/* main-all-heroes */
+
+main #all-heroes {
+  flex: 0 0 100%;
+  margin-top: 2rem;
+  order: 3;
+}
+
+/* main actions */
+
+main #actions {
+  height: 11rem;
+  flex: 0 0 100%;
+  padding-top: 1rem;
+}

@@ -1,0 +1,48 @@
+main #actions {
+  flex: 0 0 32%;
+  height: 14rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 4.2rem;
+}
+main #actions li {
+  list-style: none;
+}
+main #actions button {
+  margin: 0;
+  padding: 0.375rem 0.75rem;
+  border: 1px solid var(--dark-blue);
+  border-radius: 0.4rem;
+  line-height: 1.6;
+  background-color: white;
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--dark-blue);
+  cursor: pointer;
+  user-select: none;
+  outline: 0;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  transition: all 0.15s;
+}
+main #actions span:first-child {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+main #actions span:last-child {
+  margin: auto;
+}
+main #actions button:hover:enabled {
+  color: white;
+  background-color: var(--blue);
+  border-color: var(--blue);
+}
+main #actions button:active:enabled {
+  box-shadow: 0 0 0 0.25rem var(--light-blue);
+}
+main #actions button:disabled {
+  color: var(--light-blue);
+  cursor: default;
+}

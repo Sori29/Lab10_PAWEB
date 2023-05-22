@@ -1,0 +1,14 @@
+footer {
+  min-height: 9rem;
+  margin-top: 0;
+  font-size: 0.9rem;
+  text-align: justify;
+  line-height: 1.4rem;
+  color: var(--gray-4);
+}
+footer address {
+  margin-bottom: 1rem;
+}
+footer a {
+  color: inherit;
+}

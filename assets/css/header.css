@@ -1,0 +1,19 @@
+header {
+  height: 14rem;
+  display: flex;
+}
+header #header-image {
+  height: 100%;
+}
+header #header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+header h1 {
+  font-size: 4rem;
+  font-weight: 900;
+}
+header h2 {
+  font-size: 1.75rem;
+}

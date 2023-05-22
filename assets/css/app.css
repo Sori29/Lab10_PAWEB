@@ -1,0 +1,50 @@
+@import "header.css";
+@import "nav.css";
+@import "main.css";
+@import "main-hero.css";
+@import "main-all-heroes.css";
+@import "main-actions.css";
+@import "dialog.css";
+@import "footer.css";
+@import "layout-small.css" screen and (max-width: 768px);
+* {
+  box-sizing: border-box;
+}
+:root {
+  --gray-5: #343a40;
+  --gray-4: #5c6166;
+  --gray-3: #c1c3c5;
+  --gray-2: #e0e1e2;
+  --gray-1: #efeff0;
+  --red: #df4759;
+  --light-blue: #9dbeef;
+  --blue: #226dda;
+  --dark-blue: #0b5ed7;
+}
+body {
+  background-color: var(--gray-5);
+  font-family: Roboto, Sans;
+}
+#page {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-color: white;
+  padding: 0 2rem;
+  opacity: 1;
+}
+main section,
+footer {
+  border: 0.25vh solid lightgrey;
+  border-radius: 1rem;
+  margin: 1rem 0;
+  padding: 1.5rem;
+}
+section {
+  display: none;
+}
+section[data-selected] {
+  display: block;
+}

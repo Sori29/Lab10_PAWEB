@@ -1,0 +1,67 @@
+main #hero {
+  height: 7rem;
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main #hero > legend {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+main #hero abbr {
+  padding-left: 0.3rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--red);
+}
+main #hero div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 32%;
+}
+
+main #hero legend {
+  display: flex;
+  margin-top: -10rem;
+}
+
+main #hero fieldset > legend {
+  margin-top: -1rem;
+}
+main #hero div > label {
+  margin-bottom: 0.5rem;
+}
+main #hero input[type="text"],
+main #hero select,
+main #hero fieldset {
+  border: 1px solid var(--gray-3);
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.4rem;
+  appearance: none;
+  height: 2.5rem;
+  outline: 0;
+  transition: all 0.25s;
+}
+
+main #hero input[type="text"]:focus,
+main #hero select:focus,
+main #hero fieldset:focus-within {
+  box-shadow: 0 0 0 0.25rem var(--light-blue);
+}
+main #hero #hero-level {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+main #hero input[type="radio"] {
+  height: 1.1rem;
+  width: 1.1rem;
+  margin-left: 1rem;
+  margin-right: 0.5rem;
+}
+main #hero input[type="radio"]:first-of-type {
+  margin-left: 0;
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Code Heroes</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A demo web app." />
+    <meta name="keywords" content="Web development, HTML, CSS, JavaScript, JSON, Node.js, MySQL" />
+    <meta name="author" content="Ovidiu-Andrei Schipor" />
+    <link rel="icon" href="./assets/img/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./assets/css/lib/reset.css" />
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/app.css" />
+    <script src="./assets/js/view-model.js" defer></script>
+    <script src="./assets/js/app.js" defer></script>
+  </head>
+  <body>
+    <div id="page">
+      <header>
+        <img
+          id="header-image"
+          src="./assets/img/header.jpg"
+          alt="happy and curious minions preparing to learn Web Development"
+        />
+        <div id="header-text">
+          <h1>Code Heroes</h1>
+          <h2>Join a team, become a hero.</h2>
+        </div>
+      </header>
+      <nav>
+        <label for="toggle-nav-button"><div id="nav-btn" class="lni lni-line-spacing"></div></label>
+        <menu id="nav-menu">
+          <li><button value="heroes">Heroes</button></li>
+          <li><button value="teams">Teams</button></li>
+          <li><button value="statistics">Statistics</button></li>
+          <li><button value="about">About</button></li>
+        </menu>
+      </nav>
+      <main>
+        <section id="heroes-section">
+          <form>
+            <fieldset id="hero">
+              <legend>Current Hero</legend>
+              <div>
+                <label for="hero-name">Name<abbr title="required">*</abbr></label>
+                <input type="text" name="hero-name" id="hero-name" placeholder="hero's name" />
+              </div>
+              <div>
+                <label for="hero-team">Team<abbr title="required">*</abbr></label>
+                <select name="hero-team" id="hero-team">
+                  <option value="" disabled selected>choose a team</option>
+                  <option value="Quality Assurance">Quality Assurance</option>
+                  <option value="Sales and Marketing">Sales and Marketing</option>
+                  <option value="Customer Support">Customer Support</option>
+                  <option value="Front-End Web Development">Front-End Web Development</option>
+                  <option value="Back-End Web Development">Front-End Web Development</option>
+                  <option value="Mobile Development">Mobile Development</option>
+                  <option value="Game Development">Game Development</option>
+                </select>
+              </div>
+              <div>
+                <label for="hero-level">Level<abbr title="required">*</abbr></label>
+                <fieldset id="hero-level">
+                  <input type="radio" name="hero-level" id="hero-level-junior" value="Junior" />
+                  <label for="hero-level-junior">jr.</label>
+                  <input type="radio" name="hero-level" id="hero-level-middle" value="Middle" />
+                  <label for="hero-level-middle">mid.</label>
+                  <input type="radio" name="hero-level" id="hero-level-senior" value="Senior" />
+                  <label for="hero-level-senior">snr.</label>
+                </fieldset>
+              </div>
+            </fieldset>
+            <fieldset id="all-heroes">
+              <legend>All heroes</legend>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Team</th>
+                    <th>Level</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr></tr>
+                </tbody>
+
+                <tfoot>
+                  <tr>
+                    <td colspan="2">Number of heroes</td>
+                    <td><output for="all-heroes" id="number-of-heroes">4</output></td>
+                  </tr>
+                </tfoot>
+              </table>
+            </fieldset>
+            <menu id="actions">
+              <li>
+                <button id="action-create" type="button">
+                  <span class="lni lni-circle-plus"></span><span>Create</span>
+                </button>
+              </li>
+              <li>
+                <button id="action-update" type="button">
+                  <span class="lni lni-checkmark-circle"></span><span>Update</span>
+                </button>
+              </li>
+              <li>
+                <button id="action-delete" type="button">
+                  <span class="lni lni-cross-circle"></span><span>Delete</span>
+                </button>
+              </li>
+            </menu>
+          </form>
+        </section>
+        <section id="teams-section">
+          <h3>Teams - Work in progress</h3>
+        </section>
+        <section id="statistics-section">
+          <h3>Statistics - Work in progress</h3>
+        </section>
+        <section id="about-section">
+          <h3>About - Work in progress</h3>
+        </section>
+      </main>
+      <div id="messenger">
+        <dialog id="messenger-dialog">
+          <div>
+            <h3 id="messenger-title">Info</h3>
+            <span id="messenger-close" class="lni lni-close"></span>
+          </div>
+          <p id="messenger-message">Info message.</p>
+          <menu>
+            <li id="messenger-ok"><button>Ok</button></li>
+            <li id="messenger-cancel"><button>Cancel</button></li>
+          </menu>
+        </dialog>
+      </div>
+      <footer>
+        <address>
+          Contact: <a href="mailto:ovidiu.schipor@usm.ro">Ovidiu-Andrei Schipor</a>.
+        </address>
+        <small> &copy;2022 Web Development Course, Computer Science, Suceava University </small>
+        <small>
+          Practicing web development may lead to serious side effects including, but not limited to
+          severe changes in programming skills, seriously high incomes, strong self-confidence, loss
+          of work-life balance inequities, a general feeling of well being. Please use it with
+          caution.
+        </small>
+      </footer>
+    </div>
+  </body>
+</html>
